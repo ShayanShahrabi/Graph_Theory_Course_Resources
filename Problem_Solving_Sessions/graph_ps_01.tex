@@ -1,0 +1,59 @@
+\documentclass{article}
+
+% Language setting
+\usepackage[english]{babel}
+
+% Set page size and margins
+\usepackage[letterpaper, top=2cm, bottom=2cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
+
+% Mathematical packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Color package
+\usepackage{xcolor}
+
+\title{Problem Set 1 - Graphical Adventures: Navigating the Nodes!}
+\author{Shayan Shahrabi}
+\date{October 2024}
+
+\begin{document}
+\maketitle
+
+\section*{Problems}
+
+\subsection*{Problem 1: Exactly 2 Odd Vertices}
+Suppose that in a graph $G$, there are exactly 2 odd vertices. Prove that there must be a path between these 2 odd nodes.
+
+\subsection*{Problem 2: Minimum Length of a Path}
+Prove that in a graph $G$, there exists a path of length at least $\delta$.
+
+\subsection*{Problem 3: Really Simple}
+Prove that in every graph $G$, the following equation holds:
+\begin{equation*}
+\delta \le \frac{2m}{n} \le \Delta
+\end{equation*}
+
+\subsection*{Problem 4: Triangle Inequality}
+Prove that for any 3 nodes $x$, $y$, and $z$ in a graph $G$, the following inequality holds:
+\begin{equation*}
+d(x,y) + d(x,z) \ge d(x,z)
+\end{equation*}
+
+\subsection*{Problem 5: How to Stay Connected?}
+Prove that if $G$ is self-complementary, then it is connected.
+
+\subsection*{Problem 6: Edge-Vertex Relationship in Simple Connected Graphs}
+Suppose in a simple and connected graph $G$, we have $diam(G) = 2$ and $\Delta = n - 2$. Prove that
+\begin{equation*}
+m \ge 2n - 4
+\end{equation*}
+where $n$ is the number of vertices and $m$ is the number of edges in $G$.
+
+\subsection*{Problem 7: Bonus Question}
+\textcolor{red}{\textit{Note: Your solution for the bonus question will be reviewed only after you have solved all the previous questions, and I have approved your solution. Moreover, keep in mind that you must communicate your solution in person; otherwise, no points will be awarded!}}
+
+Suppose $V = {A_1, A_2, A_3, \ldots, A_n}$ is a subset of $n$ points in space, such that the distance between any two points is at least 1. Prove that at most $3n$ pairs of these points can have distances exactly equal to 1.
+
+\end{document}
