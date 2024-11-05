@@ -1,0 +1,128 @@
+\documentclass{article}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{algorithm}{Algorithm}
+
+\usepackage{hyperref}
+
+% Language setting
+\usepackage[english]{babel}
+
+% Set page size and margins
+\usepackage[letterpaper, top=2cm, bottom=2cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
+
+% Mathematical packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Color package
+\usepackage{xcolor}
+
+\title{Session 2: Trees in Graphs}
+\author{Shayan Shahrabi}
+\date{November 2024}
+
+\begin{document}
+\maketitle
+
+\section*{A Quick Review}
+
+(In the following text, the symbol $T$ denotes an arbitrary tree.)
+
+Definition of a tree: A connected graph without cycles!
+
+\begin{theorem}
+    In every graph resembling $T$, any two nodes, such as $x$ and $y$, are connected by \textbf{a unique} path.
+    
+    \textbf{Solution:} Prove by contradiction!
+\end{theorem}
+
+\begin{theorem}
+    If $T$ has $p$ nodes and $q$ edges, it follows that \( q = p - 1 \).
+    
+    \textbf{Solution:} Use induction on $p$.
+\end{theorem}
+
+\begin{theorem}
+    If $T$ is a binary tree with height $h$ and $p$ nodes, then the following holds:
+    \[
+    h + 1 \le p \le 2^{(h + 1)} - 1.
+    \]
+
+    \textbf{Solution:} Refer to page 103 of your textbook!
+\end{theorem}
+
+\begin{theorem}
+    An m-tree (a tree in which each node has either $n$ children or is a leaf) with $l$ leaves has a height $h$ that satisfies the following inequality:
+    \[
+    h \ge \log_m(l).
+    \]
+\end{theorem}
+
+\begin{algorithm}
+    \textbf{Breadth First Search (BFS)}
+\end{algorithm}
+
+\begin{algorithm}
+    \textbf{Depth First Search (DFS)} 
+\end{algorithm}
+
+\begin{algorithm}
+    \textbf{Prim's Algorithm} \\
+    For an explanation, view the following video: \href{https://www.youtube.com/watch?v=cplfcGZmX7I&t=2s}{Prim's Algorithm in 2 Minutes}.
+\end{algorithm}
+
+\begin{algorithm}
+    \textbf{Kruskal's Algorithm} \\
+    For an explanation, view the following video: \href{https://www.youtube.com/watch?v=71UQH7Pr9kU}{Kruskal's Algorithm in 2 Minutes}.
+\end{algorithm}
+
+\vspace{20pt}
+\hrule
+\vspace{20pt}
+
+\section*{Problems}
+
+\subsection*{Problem 1: Bye Bye Node!}
+
+Suppose we remove a vertex $v$ and all edges connected to it from the tree $T$. Prove that if $\text{deg}(v) = w$, then $T$ is divided into $w$ connected components.
+
+\subsection*{Problem 2: Rather Simple}
+
+Prove that every connected graph contains a minimum spanning tree!
+
+\subsection*{Problem 3: A Classic Problem}
+
+Let $G$ be a graph with $p-1$ edges. Prove that the following statements are equivalent (TFAE):
+\begin{itemize}
+    \item $G$ is connected.
+    \item $G$ has no cycles.
+    \item $G$ is a tree.
+\end{itemize}
+
+\subsection*{Problem 4: No Name!}
+
+Prove that a simple connected graph with exactly two intersecting edges forms a path.
+
+\subsection*{Problem 5: One from Bondy!}
+
+Prove that every tree with more than one node has at least two leaves.
+
+\subsection*{Problem 6: Prove or Disprove}
+
+Prove or disprove the following statement: If $d_1, d_2, \ldots, d_p$ are the degrees of vertices in a graph $G$, then the set of degrees \( \{1, d_1 + 1, d_2, \ldots, d_p\} \) is a valid set of degrees for a tree.
+
+\subsection*{Problem 7: Tree of Cycles?!}
+
+Suppose $T$ has $n$ vertices. Prove that $T$ is similar to a subgraph of $\bar{C}_{n+2}$.
+
+\subsection*{Problem 8: Draw and Explore}
+
+Draw a tree of your own choice and execute the BFS and DFS algorithms on it!
+
+\subsection*{Problem 9: Let's Do Some Coding!}
+
+You can take a look at this GitHub repository for further insights on the topic.
+
+\end{document}
